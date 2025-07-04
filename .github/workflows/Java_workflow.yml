@@ -63,14 +63,14 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     env:
-      Begrüsster: miteinand
+      Begruesster: miteinand
 
     steps:
      
       - name: Print my stuff
         env:
           Passwordnutzen: exploits
-        run: echo $Grussformel $Begruesster, das Passwort für $Passwordnutzen ist $Password.
+        run: echo $Grussformel $Begruesster, das Passwort für $Passwordnutzen ist ${{ secrets.Password }}
       
       
         
