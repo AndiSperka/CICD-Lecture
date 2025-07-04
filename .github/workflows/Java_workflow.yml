@@ -6,7 +6,7 @@ on:
     branches: main
 
 env:
-  Grußformel: Gruezi
+  Grussformel: Gruezi
 jobs:
   build-test:
     runs-on: ubuntu-latest
@@ -63,14 +63,14 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     env:
-      Begrüßter: miteinand
+      Begrüsster: miteinand
 
     steps:
      
       - name: Print my stuff
         env:
           Passwordnutzen: exploits
-        run: echo $Grußformel $Begrüßter, das Passwort für $Passwordnutzen ist $Password.
+        run: echo $Grussformel $Begrüsster, das Passwort für $Passwordnutzen ist $Password.
       
       
         
