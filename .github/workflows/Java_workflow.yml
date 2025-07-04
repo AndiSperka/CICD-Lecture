@@ -22,3 +22,10 @@ jobs:
       - name: Build and Test with Maven
         run: mvn -B clean verify
         
+      - name: Upload Artifacts
+        if: always()
+        uses: actions/upload-artifacts@v4
+        with:
+          name: junit-results
+          path: target/surefire-reports/
+        
