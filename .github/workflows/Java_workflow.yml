@@ -70,7 +70,7 @@ jobs:
       - name: Print my stuff
         env:
           Passwordnutzen: exploits
-        run: echo $Grussformel $Begrüsster, das Passwort für $Passwordnutzen ist $Password.
+        run: echo $Grussformel $Begruesster, das Passwort für $Passwordnutzen ist $Password.
       
       
         
