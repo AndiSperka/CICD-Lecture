@@ -13,7 +13,7 @@ jobs:
     needs: console_writer
     strategy:
       matrix:
-        version: [11, 17]
+        version: [11, 17, 21]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
